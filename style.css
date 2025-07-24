@@ -1,17 +1,75 @@
-     .gradient-bg {
-            background: linear-gradient(rgba(170, 92, 92, 0.95), rgba(232, 89, 151, 0.95));
-        }
-        .recipe-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .loading-dots:after {
-            content: '.';
-            animation: dots 1.5s steps(5, end) infinite;
-        }
-        @keyframes dots {
-            0%, 20% { color: rgba(0,0,0,0); text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0); }
-            40% { color: currentColor; text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0); }
-            60% { text-shadow: .25em 0 0 currentColor, .5em 0 0 rgba(0,0,0,0); }
-            80%, 100% { text-shadow: .25em 0 0 currentColor, .5em 0 0 currentColor; }
-        }
+   .gradient-bg {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Global text improvements */
+h1, h2, h3 {
+    color: #f9fafb;
+    font-weight: 700;
+}
+
+p, label, span {
+    color: #d1d5db;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+button {
+    transition: all 0.3s ease-in-out;
+}
+#sign-in-btn, #send-magic-link, #generate-btn {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+    border: none;
+}
+#sign-in-btn:hover, #send-magic-link:hover, #generate-btn:hover {
+    background: linear-gradient(90deg, #4a00e0, #8e2de2);
+    transform: scale(1.05);
+}
+
+/* Inputs and Textareas */
+input, select, textarea {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #f9fafb;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #8e2de2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(142, 45, 226, 0.5);
+}
+
+/* Cards */
+.bg-white {
+    background: rgba(31, 28, 44, 0.9) !important;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #f9fafb;
+}
+
+/* Recipe Card Hover Effect */
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 35px -10px rgba(142, 45, 226, 0.4);
+}
+
+/* Placeholder image adjustments */
+#recipe-result img {
+    border-radius: 12px;
+    opacity: 0.9;
+}
+
+/* Loading dots */
+.loading-dots:after {
+    content: '...';
+    color: #f3f4f6;
+}
