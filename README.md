@@ -1,4 +1,4 @@
-#### 🍳 Nexium-Laiba AI Recipe Generator App
+### 🍳 Nexium-Laiba AI Recipe Generator App
 An AI-powered recipe generator that helps you create unique, delicious, and personalized recipes using artificial intelligence. Built for food enthusiasts who love experimenting with ingredients and want quick, creative meal ideas!
 
 ✨ Features
